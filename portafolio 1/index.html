@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Rosales Diego | Landing Page Portafolio</title>
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header / Barra de Navegación Fija -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">Sergio Rosales<span>.</span></a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" title="Cambiar Tema">🌙</button>
+                <button id="menu-btn" class="btn-icon mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Landing Section 1: Hero / Portada -->
+        <section id="inicio" class="hero-section">
+            <div class="container hero-content">
+                <span class="status-badge">Estudiante de Dise&ntilde;o y Desarrollo de Software</span>
+                <h1>Hola, soy <span class="highlight">Sergio Rosales Diego</span></h1>
+                <p class="hero-description">
+                    Apasionado por la creaci&oacute;n de sitios web e interfaces interactivas. Enfocado en combinar un dise&ntilde;o visual atractivo con un c&oacute;digo limpio, funcional y accesible.
+                </p>
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn btn-primary">Ver mis Proyectos</a>
+                    <a href="#contacto" class="btn btn-outline">Escr&iacute;beme</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Landing Section 2: Sobre Mí -->
+        <section id="sobre-mi" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre M&iacute;</h2>
+                    <p class="section-subtitle">Conoce un poco m&aacute;s sobre mi perfil y metas profesionales</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Actualmente me encuentro cursando la carrera de <strong>Dise&ntilde;o y Desarrollo de Software</strong>. Mi objetivo principal es dominar las herramientas esenciales para la maquetaci&oacute;n web y el desarrollo de aplicaciones eficientes.
+                        </p>
+                        <p>
+                            Me enfoco en el aprendizaje constante, el desarrollo de buenas pr&aacute;cticas de maquetaci&00f3;n adaptativa (responsive) y la creaci&oacute;n de experiencia de usuario (UX/UI) sencilla e intuitiva.
+                        </p>
+                    </div>
+
+                    <div class="about-cards">
+                        <div class="card-mini">
+                            <div class="icon">🎨</div>
+                            <h3>Dise&ntilde;o UI / UX</h3>
+                            <p>Prototipado en Figma, wireframes y estructura visual enfocada en el usuario.</p>
+                        </div>
+                        <div class="card-mini">
+                            <div class="icon">💻</div>
+                            <h3>Desarrollo Frontend</h3>
+                            <p>Maquetaci&oacute;n con HTML5, CSS3, Flexbox, Grid y l&oacute;gica con JavaScript ES6.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Landing Section 3: Habilidades / Skills -->
+        <section id="habilidades" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Habilidades T&eacute;cnicas</h2>
+                    <p class="section-subtitle">Tecnolog&iacute;as y herramientas que utilizo en mis proyectos</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Tarjeta 1: Diseño -->
+                    <div class="skills-card">
+                        <h3>Dise&ntilde;o y Prototipado</h3>
+                        <ul class="skills-list">
+                            <li><span>Figma</span> <small>Wireframes y Prototipos</small></li>
+                            <li><span>Dise&ntilde;o UI/UX</span> <small>Interfaces e Interacciones</small></li>
+                            <li><span>Dise&ntilde;o Responsive</span> <small>Adaptaci&oacute;n a m&oacute;viles</small></li>
+                            <li><span>Sistemas de Color</span> <small>Paletas y Tipograf&iacute;a</small></li>
+                        </ul>
+                    </div>
+
+                    <!-- Tarjeta 2: Desarrollo -->
+                    <div class="skills-card">
+                        <h3>Desarrollo Web</h3>
+                        <ul class="skills-list">
+                            <li><span>HTML5</span> <small>Estructura Sem&aacute;ntica</small></li>
+                            <li><span>CSS3</span> <small>Flexbox, Grid & Variables</small></li>
+                            <li><span>JavaScript</span> <small>Manipulaci&oacute;n del DOM</small></li>
+                            <li><span>Git & GitHub</span> <small>Control de Versiones</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Landing Section 4: Proyectos -->
+        <section id="proyectos" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Mis Proyectos</h2>
+                    <p class="section-subtitle">Algunos trabajos y pr&aacute;cticas que he realizado</p>
+                </div>
+
+                <!-- Botones de Filtrado -->
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="dev">Desarrollo Web</button>
+                    <button class="filter-btn" data-category="design">Dise&ntilde;o UX/UI</button>
+                </div>
+
+                <!-- Grid de Tarjetas de Proyectos -->
+                <div class="projects-grid">
+                    
+                    <!-- Proyecto 1 -->
+                    <article class="project-card" data-category="dev">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600" alt="Plataforma Educativa">
+                        </div>
+                        <div class="project-content">
+                            <span class="badge-tag">Desarrollo Web</span>
+                            <h3>Plataforma Educativa Web</h3>
+                            <p>P&aacute;gina web para la gesti&oacute;n de cursos con interfaz responsive y cat&aacute;logo interactivo.</p>
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS Grid</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="abrirModal('proyecto1')">Ver Detalles</button>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card" data-category="design">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600" alt="Rediseño App Finanzas">
+                        </div>
+                        <div class="project-content">
+                            <span class="badge-tag">Dise&ntilde;o UX/UI</span>
+                            <h3>Redise&ntilde;o App de Finanzas</h3>
+                            <p>Prototipo interactivo navegable para el seguimiento de gastos y finanzas personales.</p>
+                            <div class="tech-tags">
+                                <span>Figma</span>
+                                <span>UI/UX</span>
+                                <span>Wireframes</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="abrirModal('proyecto2')">Ver Detalles</button>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card" data-category="dev">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Gestor de Tareas">
+                        </div>
+                        <div class="project-content">
+                            <span class="badge-tag">Desarrollo Web</span>
+                            <h3>Dashboard Gestor de Tareas</h3>
+                            <p>Aplicaci&oacute;n web para administrar tareas pendientes con persistencia en LocalStorage.</p>
+                            <div class="tech-tags">
+                                <span>JavaScript</span>
+                                <span>CSS Flexbox</span>
+                                <span>LocalStorage</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="abrirModal('proyecto3')">Ver Detalles</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Landing Section 5: Contacto -->
+        <section id="contacto" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contacto</h2>
+                    <p class="section-subtitle">&iquest;Tienes un proyecto en mente o quieres contactarme? Escr&iacute;beme un mensaje</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo">Correo electr&oacute;nico:</label>
+                            <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                        <div id="form-feedback" class="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ventana Modal de Detalles del Proyecto -->
+    <div id="modal-proyecto" class="modal-backdrop">
+        <div class="modal-box">
+            <button class="modal-close" id="cerrar-modal">&times;</button>
+            <div id="modal-contenido">
+                <!-- Se inyecta vía JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer de la Landing Page -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> Sergio Rosales Diego. Portafolio Estudiantil.</p>
+            <div class="social-links">
+                <a href="https://github.com/sergiorosales1205?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+                <a href= "mailto:sergio.rosales.d@tecsup.edu.pe" target="_blank" rel="noopener">Mandame un Gmail</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Archivo JavaScript Principal -->
+    <script src="js/script.js"></script>
+</body>
+</html>
